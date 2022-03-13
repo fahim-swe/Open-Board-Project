@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 !important;
+    padding: 0 p !important;
+}
+
+.options-cont{
+    height: 4rem;
+    width: 4.5rem;
+    background-color: #d6dcf3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+img{
+    display: block;
+}
+.tools-cont
+{
+    height: 5rem;
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    background-color: aliceblue;
+    margin-top: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 21vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tools-cont > *{
+    display: block;
+    width: 4rem;
+
+}
+
+
+/* Animation */
+.scale-tools
+{
+    animation-name: scale-tools;
+    animation-duration: 1s;
+}
+@keyframes scale-tools
+{
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.pencil-tool
+{
+    display: none;
+    height: 5rem;
+    width: 8rem;
+    background-color: aliceblue;
+    position: absolute;
+    top: 8rem;
+    left: 21vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pencil-width-cont{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pencil-width-cont input{
+    width: 80%;
+}
+
+.black{
+    background: black;
+}
+
+.blue{
+    background: blue;
+}
+
+.red{
+    background: red;
+}
+
+.pencil-color-cont
+{
+    height: calc(100% - 2rem);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.pencil-color
+{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+
+/* For eraser Btn */
+.eraser-tool-cont
+{
+    height: 3rem;
+    width: 8rem;
+    background-color: aliceblue;
+    position: absolute;
+    top: 8rem;
+    left: 30vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eraser-tool-cont input {
+    width: 80%;
+}
+
+
+
+/* Sticky note */
+.sticky-cont
+{
+    height: 15rem;
+    width: 20rem;
+    position: absolute;
+    top: 45vh;
+    left: 10vw;
+    
+}
+
+.header-cont
+{
+    height: 2rem;
+    background-color: rgb(217, 231, 243);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.header-cont > *{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.minimize
+{
+    background-color: green;
+}
+
+.remove
+{
+    background-color: red;
+}
+.note-cont
+{
+    height: calc(100% - 2rem);
+    background-color: #d6dcf3;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+img
+{
+    height: 100%;
+    width: 100%;
+}
+
+/* Canvas Drawing */
+#starfieldCanvas {
+    
+}
