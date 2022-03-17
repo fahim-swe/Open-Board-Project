@@ -129,13 +129,27 @@ downloadIcon.addEventListener("click", (e)=> {
 
 // Redo
 undoIcon.addEventListener("click", (e)=> {
-    
+    if(track > 0) track--;
 })
 
 
 redoIcon.addEventListener("click", (e)=>{
+    if(track < undoRedoTracker.length-1) track++;
 
+    // action
+    let trackObj = {
+        trackValue: track,
+        undoRedoTracker
+    }
+
+    undoReduCanvas(trackObj);
 })
+
+
+function undoReduCanvas(trackObj)
+{
+    console.log(trackObj);
+}
 
 
 function beginPath(strokeObj)
